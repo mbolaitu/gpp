@@ -127,7 +127,7 @@ public class Conge {
         long reponse = -1;
         ResultSet rs = Oracle.getConnection().createStatement().executeQuery("select count(*) from conge_valider");
         while(rs.next()) {
-            reponse = rs.getLong(1)+5;
+            reponse = rs.getLong(1)+1;
         }
         return reponse;
     }
